@@ -1,0 +1,22 @@
+Una blockchain pública es una red cuyos nodos se encuentran distribuidos en todo el mundo y cada uno de ellos tiene una copia exacta de todos los datos de las transacciones que se han realizado desde que comienza a operar la cadena de bloques (NAVARRO, 2017).
+
+Las tecnologías para desarrollar y ejecutar contratos inteligentes son nuevas y en la actualidad existen varias blockchains públicas cada una con sus propias características. Ethereum es la implementación más madura y su entorno productivo comenzó a operar el 30 de Julio de 2015 cuando se registró el primer bloque, llamado génesis (ETHERSCAN, 2015). 
+
+Cuando se programan contratos inteligentes se pueden escribir dos tipos de operaciones: 
+    • Consultas: No requieren actualizar el estado de la blockchain, es decir que no tienen que escribir ninguna transacción ni generar bloques nuevos. Cuando se ejecutan no implican gastos de dinero.
+
+    • Transacciones: Requieren la escritura de en un nuevo bloque e implican la actualización de datos de todos los nodos de la red. La ejecución de las transacciones tienen un costo que debe asumir el usuario final porque necesitan electricidad para su procesamiento. El poder de cómputo requerido se mide en GAS (no es un acrónimo) y se monetiza en Ether, la criptomoneda de Ethereum (SOLIDITY, 2018).
+
+Un bloque es un conjunto de transacciones que se agregan al final de la cadena. Los bloques son inmutables, es decir que no se puede modificar ni borrar una vez escritos y van a existir durante toda la vida útil de la blockchain. Cuando los programadores escriben contratos inteligentes deben ser cuidadosos con los datos que va a publicar en la cadena porque los bloques son inmutables y si se registran datos sensibles de  personas, se incurren en problemas legales ya que  esta tecnología impide ejercer el derecho de supresión o corrección de datos que establece la Ley de Protección de Datos Personales de Argentina (MINISTERIO DE JUSTICIA Y DERECHOS HUMANOS, 2000).
+
+A pesar que Ethereum es la implementación más madura para desarrollar smart contracts, está en constante desarrollo. Regularmente se liberan nuevas versiones de los compiladores y lenguajes de programación de la plataforma, pero en ocasiones no son 100% con las versiones anteriores, obligando a los desarrolladores a actualizar el código fuente. (SOLIDITY, 2019)
+
+Ethereum tarda en promedio 15 segundos en procesar un nuevo bloque y maneja en promedio 25 TPS, transacciones por segundo (ETHERSCAN, 2019), un procesamiento lento que podría afectar a la experiencia de los usuarios al momento de realizar apuestas. Con el tiempo surgieron otras implementaciones de blockchain públicas que aumentaron la capacidad de procesamiento de transacciones, por ejemplo TRON llega a las 2.000 TPS, pero es más inmadura porque tiene menos tiempo operando en producción (TRON, 2018). 
+
+Para desarrollar Betex es necesario contar con datos de eventos y resultados deportivos para determinar quiénes son los ganadores de las apuestas motivo por el cual hay que desarrollar un módulo que tome datos de una fuente secundaria, los procese y registre los necesarios en la cadena de bloques.
+
+Los usuarios finales interactúan con los contratos inteligentes de Betex a través de una aplicación móvil que también muestra la información de los eventos deportivos. La aplicación también es una wallet, una software que almacena las claves privadas del usuario para que opere con criptomonedas y pueda invocar las funciones de los contratos inteligentes que forman parte de Betex. 
+
+Los contratos inteligentes del presente trabajo se dejan disponibles para la comunidad de desarrolladores porque utiliza criptomonedas, activos que representan valor, y el código fuente permite demostrar que no se programaron con intenciones fraudulentas. El proyecto es de código abierto (Open Source) y le permite a cualquier persona leer o modificar el código fuente, y agregar nuevas funcionalidades. (Stallman y otros. 2007, p. 45)
+
+
